@@ -1,21 +1,21 @@
-function drawStar(n) {
-    let star = "";
-    const starLength = 2 * n; // 별의 개수
+// 라인수를 받아서 삼각형 형태를 출력하는 함수
+const rowLength = prompt('row?');
+const starsLength = rowLength * 2;
+let star = "";
 
-    for (let i = 1; i < starLength; i += 2) {
-
-        for (let j = 0; j < i; j++) {
-            star += "*";
-        }
-        star += '\n';
+for (let i = 1; i < starsLength; i += 2) {
+    for (let c = rowLength; c * 2 > i; c--) {
+        star += "1";
     }
-
-    console.log(star);
+    for (let j = 0; j < i; j++) {
+        star += "*";
+    }
+    star += '\n';
 }
 
-drawStar(5);
+console.log(star);
 
 /**
- * 별 찍는중.
- * 자괴감 오진다.
+ * 일단 된다. 근데 왜 찍히는지는 모르겠다.
+ * 난 개발자가 될수 없는걸까
  */
