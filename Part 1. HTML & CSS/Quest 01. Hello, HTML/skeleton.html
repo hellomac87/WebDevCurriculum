@@ -3,19 +3,118 @@
 	<head>
 		<meta charset="UTF-8">
 		<!-- TODO: 또 무엇이 필요할까요? -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+
+		<link rel="stylesheet" href="style.css">
+		<script src="javascript.js"></script>
 	</head>
 	<body>
 		<header>
 			<!-- TODO: 상단의 회색 부분은 어떻게 처리하면 좋을까요? -->
+			<h1 class="logo"></h1>
+			<div class="this-repo">This repository</div>
+			<input type="search" placeholder="Search" />
+			<nav>
+				<ul>
+					<li><a href="#">Pull request</a></li>
+					<li><a href="#">Issues</a></li>
+					<li><a href="#">Marketplace</a></li>
+					<li><a href="#">Explore</a></li>
+				</ul>
+			</nav>
+			<ul class="user">
+				<li><a href="#" class="bell"></a></li>
+				<li>
+					<span>+</span>
+					<ul>
+						<li><a href="#">list-item</a></li>
+						<li><a href="#">list-item</a></li>
+						<li><a href="#">list-item</a></li>
+					</ul>
+				</li>
+				<li>
+					<span>user</span>
+					<ul>
+						<li><a href="#">user-list-item</a></li>
+						<li><a href="#">user-list-item</a></li>
+						<li><a href="#">user-list-item</a></li>
+					</ul>
+				</li>
+			</ul>
 		</header>
 
 		<section class="main">
 			<header class="main-header">
-				<!-- TODO: 메인의 헤더 부분 -->
+				<h2><a href="#">KnowRe</a> / <a href="#">WebDevCurriculum</a></h2>
+				<ul>
+					<li>
+						<ul class="follow">
+							<li><a href="#">item</a></li>
+							<li><a href="#">item</a></li>
+							<li><a href="#">item</a></li>
+						</ul>
+					</li>
+					<li>
+						<button class="star">star</button>
+						<span class="star-number">113</span>
+					</li>
+					<li>
+						<button class="star">Fork</button>
+						<span class="star-number">106</span>
+					</li>
+				</ul>
+				<ul class="tab-menu">
+					<li><a href="#"><span class="icon"></span>Code</a></li>
+					<li><a href="#"><span class="icon"></span>Issues<span class="numb"></span></a></li>
+					<li><a href="#"><span class="icon"></span>Pull request<span class="numb"></span></a></li>
+					<li><a href="#"><span class="icon"></span>Projects<span class="numb"></span></a></li>
+					<li><a href="#"><span class="icon"></span>Insights</a></li>
+				</ul>
 			</header>
 
 			<section class="main-detail">
-				<!-- TODO: 메인의 부분 -->
+				<h3>KnowRe web development curriculum for noobs</h3>
+				<ul class="tab-menu">
+					<li><a href="#"><span class="icon"></span><span class="num">44</span>commits</a></li>
+					<li><a href="#"><span class="icon"></span><span class="num">1</span>branch</a></li>
+					<li><a href="#"><span class="icon"></span><span class="num">0</span>release</a></li>
+					<li><a href="#"><span class="icon"></span><span class="num">2</span>contributos</a></li>
+					<li><a href="#"><span class="icon"></span>MIT</a></li>
+				</ul>
+
+				<div class="group-btn-wrap">
+					<div class="group-btn">
+						<div class="menu-group">
+							<span>Branch:master</span>
+						</div>
+						<button>New pull request</button>
+					</div>
+					
+					<div class="group-btn">
+						<button>Create new file</button>
+						<button>Upload files</button>
+						<button>Find file</button>
+						<div class="menu-group">
+							<span>Branch:master</span>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="doc-head">
+
+				</h3>
+				<ul class="doc-body">
+					<li> 
+						<div class="doc">
+							<span class="icon"></span>
+						</div>
+						<div class="commit-msg"></div>
+						<div class="update-time"></div>
+					</li>
+				</ul>
+				
 			</section>
 		</section>
 
